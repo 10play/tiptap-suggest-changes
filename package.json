@@ -1,6 +1,6 @@
 {
   "name": "@handlewithcare/prosemirror-suggest-changes",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "license": "MIT",
   "type": "module",
   "module": "dist/index.js",
@@ -33,8 +33,7 @@
     "fix:toc": "markdown-toc --bullets='-' -i README.md",
     "fix": "concurrently -P 'npm:fix:* {@}' --",
     "prepack": "yarn build",
-    "test": "vitest",
-    "prepare": "husky"
+    "test": "vitest"
   },
   "packageManager": "yarn@1.22.22",
   "devDependencies": {
