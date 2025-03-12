@@ -33,7 +33,8 @@
     "fix:toc": "markdown-toc --bullets='-' -i README.md",
     "fix": "concurrently -P 'npm:fix:* {@}' --",
     "prepack": "yarn build",
-    "test": "vitest"
+    "test": "vitest",
+    "prepare": "husky"
   },
   "packageManager": "yarn@1.22.22",
   "devDependencies": {
