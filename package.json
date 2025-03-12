@@ -36,7 +36,7 @@
     "test": "vitest",
     "prepare": "husky"
   },
-  "packageManager": "yarn@4.6.0",
+  "packageManager": "yarn@1.22.22",
   "devDependencies": {
     "@eslint/compat": "^1.2.7",
     "@eslint/js": "^9.21.0",

@@ -47,6 +47,7 @@ yarn add @handlewithcare/prosemirror-suggest-changes prosemirror-view prosemirro
     - [`isSuggestChangesEnabled`](#issuggestchangesenabled)
   - [`dispatchTransaction` Decorator](#dispatchtransaction-decorator)
     - [`withSuggestChanges`](#withsuggestchanges)
+- [Develop](#develop)
 
 <!-- tocstop -->
 
@@ -386,3 +387,19 @@ function withSuggestChanges(
   dispatchTransaction?: EditorView["dispatch"],
 ): EditorView["dispatch"];
 ```
+
+## Develop
+
+To use the local version of the lib for testing with
+[yarn link](https://classic.yarnpkg.com/lang/en/docs/cli/link/#toc-yarn-link-package)
+:
+
+1. Make sure you are on yarn 1.22
+1. Run `yarn link` in this repo
+1. Run `yarn link "@handlewithcare/prosemirror-suggest-changes"` to use linked
+   version in another project
+1. The other project will automatically use the latest built version so make
+   sure to build after changing the code
+
+- To unlink simply use `yarn unlink` or
+  `yarn unlink "@handlewithcare/prosemirror-suggest-changes"` respectively
